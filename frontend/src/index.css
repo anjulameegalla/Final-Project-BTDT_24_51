@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply border-slate-700; }
+  body {
+    @apply bg-slate-900 text-slate-100 font-sans antialiased;
+  }
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-slate-800; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-600 rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-500; }
+}
+
+@layer components {
+  .card {
+    @apply bg-slate-800 border border-slate-700 rounded-xl p-6;
+  }
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg
+           transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed
+           flex items-center gap-2;
+  }
+  .btn-secondary {
+    @apply bg-slate-700 hover:bg-slate-600 text-slate-100 font-medium px-4 py-2 rounded-lg
+           transition-all duration-200 flex items-center gap-2;
+  }
+  .btn-danger {
+    @apply bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg
+           transition-all duration-200 flex items-center gap-2;
+  }
+  .input {
+    @apply w-full bg-slate-700 border border-slate-600 text-slate-100 rounded-lg px-4 py-2.5
+           focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
+           placeholder-slate-400 transition-all duration-200;
+  }
+  .label {
+    @apply block text-sm font-medium text-slate-300 mb-1.5;
+  }
+  .badge-critical {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+           bg-red-900/50 text-red-400 border border-red-800;
+  }
+  .badge-high {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+           bg-orange-900/50 text-orange-400 border border-orange-800;
+  }
+  .badge-medium {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+           bg-yellow-900/50 text-yellow-400 border border-yellow-800;
+  }
+  .badge-low {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold
+           bg-green-900/50 text-green-400 border border-green-800;
+  }
+  .sidebar-link {
+    @apply flex items-center gap-3 px-4 py-2.5 rounded-lg text-slate-400
+           hover:bg-slate-700 hover:text-slate-100 transition-all duration-200 text-sm font-medium;
+  }
+  .sidebar-link.active {
+    @apply bg-blue-600/20 text-blue-400 border border-blue-600/30;
+  }
+}

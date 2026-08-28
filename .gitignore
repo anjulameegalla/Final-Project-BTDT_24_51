@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+ENV/
+.env
+!.env.example
+
+# Reports (generated PDFs)
+backend/reports/
+*.pdf
+
+# Node
+node_modules/
+dist/
+.cache/
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test files
+backend/test_api.py
+
+# MongoDB data
+data/db/
