@@ -1,4 +1,4 @@
-# CloudGuard-AI 
+## CloudGuard AI - HND/DT Final Project Implementation
 
 
 
@@ -92,7 +92,7 @@ AWS access-key secrets are encrypted before being stored in MongoDB. IAM role au
 
 ## Required AWS IAM Policy
 
-Attach this read-only policy to the IAM role/user used for scanning:
+Attach this read-only policy to the IAM role/user used for scanning: See [IAM policy](docs/iam-policy.json)
 
 ```json
 {
